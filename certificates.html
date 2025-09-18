@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f9f9f9;
+      background: #f9f9f9;
       margin: 0;
       padding: 0;
     }
@@ -20,16 +20,21 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
       padding: 20px;
       max-width: 1200px;
       margin: auto;
     }
     .gallery img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -41,7 +46,7 @@
     <img src="certificates/c3.jpg" alt="Certificate 3">
     <img src="certificates/c4.jpg" alt="Certificate 4">
     <img src="certificates/c5.jpg" alt="Certificate 5">
-    <!-- Add more as needed -->
+    <!-- Add more images here as needed -->
   </div>
 </body>
 </html>
