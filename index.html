@@ -100,7 +100,7 @@
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
     .chips { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1rem; }
     .chip { border: 1px solid var(--border); border-radius: 999px; padding: .35rem .7rem; color: #d5e7ff; background: rgba(255,255,255,.035); font-size: .9rem; }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }
     .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.35rem; min-height: 100%; }
     .card-icon { font-size: 1.8rem; }
     h3 { margin: .45rem 0 .55rem; font-size: 1.18rem; line-height: 1.35; }
@@ -210,33 +210,32 @@
       <div class="wrap">
         <div class="section-head">
           <div class="eyebrow">Selected work</div>
-          <h2>Projects I'm exploring</h2>
-          <p class="section-intro">A few projects from my learning journey. Add links to project pages, demos or source code when they're ready.</p>
+          <h2>Projects I've explored</h2>
+          <p class="section-intro">A selection of creative and technology projects from my learning journey.</p>
         </div>
         <div class="cards">
           <article class="card">
             <div class="card-icon" aria-hidden="true">🐊</div>
-            <h3>Chambal Guardian</h3>
-            <p>An educational game concept focused on protecting gharials and the Chambal ecosystem through conservation-themed missions.</p>
-            <!-- TODO: Replace # with your public game/demo/project URL when available. -->
-            <a class="small-link" href="#contact" aria-label="Ask about the Chambal Guardian project">Project details →</a>
+            <h3>Nemora: The Silent Kingdom</h3>
+            <p>A conservation-themed game project inspired by the Chambal ecosystem, highlighting wildlife protection and the importance of safeguarding gharials and their habitat.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">⚡</div>
             <h3>Footstep Power Generation</h3>
-            <p>An electronics experiment exploring how pressure on piezoelectric discs can produce electrical signals for a small demonstration system.</p>
-            <!-- TODO: Replace # with your public code or project write-up URL when available. -->
-            <a class="small-link" href="#contact" aria-label="Ask about the footstep power project">Project details →</a>
+            <p>An electronics experiment exploring how pressure on piezoelectric discs can produce electrical signals for a small demonstration system. The project involves testing sensor output and exploring ways to display or use the generated signal.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">🧪</div>
             <h3>Arduino pH Sensor</h3>
-            <p>A sensor-and-display experiment using an Arduino and an LCD to explore pH readings and how sensor values can be presented.</p>
-            <!-- TODO: Replace # with your public code or project write-up URL when available. -->
-            <a class="small-link" href="#contact" aria-label="Ask about the Arduino pH sensor project">Project details →</a>
+            <p>A sensor-and-display experiment using an Arduino and an LCD to explore pH readings and how sensor values can be presented. The project focuses on reading sensor output, displaying measurements, and comparing readings from different sample solutions.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🩺</div>
+            <h3>Bio Healthcare</h3>
+            <p>A healthcare website concept focused on health measurements such as BMI, with tools and information intended to help users explore basic health metrics. It is an informational project, not a substitute for professional medical advice.</p>
+            <a class="small-link" href="https://airo.ai/share/dmU5N2hudnJ1ajpjNDA6ZWNrY1RGMkQ0aG1n" target="_blank" rel="noopener noreferrer">Explore Bio Healthcare →</a>
           </article>
         </div>
-        <p class="certificate-note">Note: These summaries describe project work you've discussed. Add only projects you want to present publicly, and link to a page or demo when you have one.</p>
       </div>
     </section>
 
